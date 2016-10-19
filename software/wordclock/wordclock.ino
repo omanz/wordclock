@@ -19,6 +19,8 @@
 #include "layouts/digitallayout.cpp"
 #include "layouts/abstractlayout.h"
 #include "layouts/abstractlayout.cpp"
+#include "layouts/customlayout.h"
+#include "layouts/customlayout.cpp"
 #include "layouts/layout.h"
 #include "layouts/layout.fr.cpp"
 #include "layouts/layout.en.cpp"
@@ -28,9 +30,10 @@ WS2812 ws2812(DISPLAY_LEDS);
 Config config;
 Layout wordLayout;
 DigitalLayout digitalLayout;
+CustomLayout customLayout;
 TimeManager timeManager;
 Sensors sensors;
-Display display(&wordLayout, &digitalLayout, &config, &timeManager, &ws2812, &sensors);
+Display display(&wordLayout, &digitalLayout, &customLayout, &config, &timeManager, &ws2812, &sensors);
 StateManager stateManager(&timeManager, &display, &config);
 Input input(&stateManager);
 

@@ -2,8 +2,8 @@
 
 // #define ADD_LED(name) {int leds[] = {name};	this->addLedsOn(leds);}
 
-Display::Display(AbstractLayout* wordLayout, AbstractLayout* digitalLayout, Config* config, TimeManager* timeManager, WS2812* ws2812, Sensors* sensors)
-: wordLayout(wordLayout), digitalLayout(digitalLayout), config(config), timeManager(timeManager), leds(ws2812), sensors(sensors) {
+Display::Display(AbstractLayout* wordLayout, AbstractLayout* digitalLayout, AbstractLayout* customLayout, Config* config, TimeManager* timeManager, WS2812* ws2812, Sensors* sensors)
+: wordLayout(wordLayout), digitalLayout(digitalLayout), customLayout(customLayout), config(config), timeManager(timeManager), leds(ws2812), sensors(sensors) {
 
 	this->leds->setOutput(PIN_LED_STRIP);
 	this->leds->setColorOrderRGB();
@@ -54,7 +54,10 @@ void Display::draw() {
 	this->allLedsOff();
 	if(this->currentState==CLOCK_DIGITAL || this->currentState==SET_HOUR || this->currentState==SET_MINUTE){
 		this->digitalLayout->getLayout(hour, minute, second, this);
-	}else{
+	} else if (this->currentState==CUSTOM_DISPLAY){
+        this->customLayout->getLayout(hour, minute, second, this);
+	}
+	else{
 		this->wordLayout->getLayout(hour, minute, second, this);
 	}
 	this->writeLeds();

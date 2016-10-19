@@ -7,12 +7,12 @@
 | T | R | O | I | S |   | Q | U | A | T | R | E |
 | C | I | N | Q | S | I | X |   | S | E | P | T |
 | H | U | I | T |   | N | E | U | F | D | I | X |
-|   | O | N | Z | E |   | D | O | U | Z | E |   |
-|   | D | E | U | X |   | H | E | U | R | E | S |
+| K | O | N | Z | E |   | D | O | U | Z | E |   |
+| I | D | E | U | X |   | H | E | U | R | E | S |
 | M | O | I | N | S |   | E | T |   | D | I | X |
 |   |   | V | I | N | G | T | - | C | I | N | Q |
 | Q | U | A | R | T |   | D | E | M | I |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   | X | A | V | I | E | R |   |   |   |
 |   |   |   |   | * | * | * | * |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |
 

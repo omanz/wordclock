@@ -16,7 +16,7 @@
 
 class Display : public Debugable{
 public:
-	Display(AbstractLayout*, AbstractLayout*, Config*, TimeManager*, WS2812*, Sensors*);
+	Display(AbstractLayout*, AbstractLayout*, AbstractLayout*, Config*, TimeManager*, WS2812*, Sensors*);
 
 	void init();
 
@@ -41,6 +41,7 @@ public:
 private:
 	AbstractLayout* wordLayout;
 	AbstractLayout* digitalLayout;
+	AbstractLayout* customLayout;
 	Config* config;
 	TimeManager* timeManager;
 	Sensors* sensors;

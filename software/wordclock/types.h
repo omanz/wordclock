@@ -11,7 +11,8 @@ typedef enum {
 	CHANGE_SATURATION, //3
 	CHANGE_BRIGHTNESS, //4
 	SET_HOUR, //5
-	SET_MINUTE //6
+	SET_MINUTE, //6
+	CUSTOM_DISPLAY //7
 } state_type;
 
 /**
