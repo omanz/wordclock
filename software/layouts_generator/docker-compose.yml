@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+
+  layout-generator:
+    build: .
+    image: gaetancollaud/wordclock-layout-generator
+    container_name: wordclock-layout-generator
+    ports:
+      - 8000:8000

@@ -9,7 +9,8 @@
 //Define if you want to substract the minute when after half an hour
 #define MINUTES_REVERSE false
 
-#define USE_EXTERNAL_CLOCK false
+//!\ WARNING if 'false' the clock will be simulated
+#define USE_EXTERNAL_CLOCK true
 
 //matrix
 #define DISPLAY_ROWS 12
@@ -26,8 +27,8 @@
 
 //Sensors
 #define SENSOR_LIGHT_PIN A0
-#define SENSOR_LIGHT_MIN 730
-#define SENSOR_LIGHT_MAX 980
+#define SENSOR_LIGHT_MIN 100
+#define SENSOR_LIGHT_MAX 970
 
 //Outputs
 #define PIN_LED_STRIP 8
