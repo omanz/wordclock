@@ -11,7 +11,7 @@
 | I | D | E | U | X |   | H | E | U | R | E | S |
 | M | O | I | N | S |   | E | T |   | D | I | X |
 |   |   | V | I | N | G | T | - | C | I | N | Q |
-| Q | U | A | R | T |   | D | E | M | I |   |   |
+| Q | U | A | R | T |   | D | E | M | I | E |   |
 |   |   |   | X | A | V | I | E | R |   |   |   |
 |   |   |   |   | * | * | * | * |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |
@@ -97,10 +97,10 @@ void Layout::getLayout(uint8_t hour, uint8_t minute, uint8_t second, Display* d)
 			break;
 	}
 
-	this->append(d, 60, 61, 62, 63, 64); //heures
+	this->append(d, 61, 62, 63, 64, 65); //heures
 	if(hour>1){
 	    // heures avec s
-	    this->append(d, 65);
+	    this->append(d, 60);
 	}
 
     this->minuteStars(d, &minute, 124, 125, 126, 127);
@@ -127,7 +127,7 @@ void Layout::getLayout(uint8_t hour, uint8_t minute, uint8_t second, Display* d)
 			break;
 		case 6:
 			this->append(d, 78, 79); // et
-			this->append(d, 102, 103, 104, 105); // demi
+			this->append(d, 102, 103, 104, 105, 106); // demie
 			break;
 		case 7:
 			this->append(d, 72, 73, 74, 75, 76); // moins
